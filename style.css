@@ -21,7 +21,7 @@ body{
 }
 /* sidebar */
 .sidebar{
-    height: 95vh;
+    height: 94vh;
     background-color: #2a2a2a;
     border: 1px solid #3a3a3a;
     border-radius: 15px;
@@ -122,7 +122,9 @@ body{
 
 
 /* main-content */
-
+.main-content{
+    margin-bottom: 40px;
+}
 
 /* navigation-section */
 
@@ -363,4 +365,35 @@ p{
     border-radius: 5px;
     font-size: 0.75rem;
     margin-right: 5px;
+}
+
+
+@media screen and (max-width:1200px) {
+    .main-container{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .sidebar{
+        position: static;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .project-container{
+        grid-template-columns: 1fr;
+    }
+
+    #navigation nav {
+        /* Adjust nav for smaller screens */
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .sidebar{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
 }
