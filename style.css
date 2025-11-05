@@ -425,6 +425,7 @@ p {
     }
 
     #themeToggle {
+        height: 40px;
         padding: 6px 10px;
         font-size: 14px;
         border-radius: 18px;
@@ -432,6 +433,7 @@ p {
 
     /* Reduce navigation button size on phone */
     nav a {
+        height: 40px;
         font-size: 14px;
         padding: 6px 12px;
         border-radius: 18px;
@@ -454,6 +456,7 @@ p {
     }
 
     #navigation nav {
+        height: 110px;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -464,6 +467,10 @@ p {
         display: flex;
         justify-content: center;
         gap: 40px;
+    }
+
+    .main-content {
+        padding: 20px;
     }
 
 }
